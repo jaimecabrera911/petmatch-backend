@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adopters",
+  "info": {
+    "singularName": "adopter",
+    "pluralName": "adopters",
+    "displayName": "Adopter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dniType": {
+      "type": "string"
+    },
+    "dniNumber": {
+      "type": "string"
+    },
+    "names": {
+      "type": "string"
+    },
+    "surnames": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
